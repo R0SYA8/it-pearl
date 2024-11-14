@@ -34,3 +34,113 @@ html {
     background-size:cover;
    
   }
+  header.primary h1, header.primary h2{
+    margin:0;
+  }
+  
+  header.primary h1 a{
+    color:#ffffff;
+    text-decoration:none;
+    font-size: 2.5rem;
+    text-shadow:2px 2px #000;
+  }
+  
+  header.primary h2{
+    color:#ffffff;
+    text-shadow:2px 2px #000;
+  }
+  
+  header.primary div.hgroup{
+    width:70%;
+  }
+  
+  header.primary nav{
+    width:30%;
+  }
+  
+  header.primary nav ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+  }
+  
+  header.primary nav ul li{
+    margin-bottom:10px;
+  }
+  
+  header.primary nav ul li a{
+    border: 1px solid #cc3a67;
+    border-right:10px solid #cc3a67;
+    border-radius:20px 0;
+    color:white;
+    display:block;
+    background-color:rgba(0,0,0,.6);
+    padding:10px 10px 10px 0;
+    text-align:right;
+    transition: .5s;
+    font-sixe: .9rem;
+    text-decoration:none;
+  }
+  
+  header.primary nav a:hover{
+      background-color:rgba(0,0,0, .9);
+      text-decoration:underline;
+  }
+  
+  #content{
+    line-height:1.8rem;
+  }
+  
+  #content h2, #content h3, article.widget h2{
+    color:#161A59;
+    border-left: 7.5px solid #D94179;
+    padding:7.5px;
+    border-radius:15px 0;
+  }
+  
+  #blog{
+    background-color:#E84A17;
+    padding:20px 0;
+    border-top:6px double #0a96a6; 
+    border-bottom:6px double #0a96a6; 
+  }
+  article.post{
+    background-color:#E99D87;
+    margin:20px;padding:20px
+      display:grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows:auto;
+    grid-template-area:
+      "Figure header"
+      "Figure post-content"
+      "Figure footer"
+      
+  }
+  #blog article figure{
+    grid-area:figure;
+    margin:0 20px 0 0;
+  }
+  #blog article header{
+    grid-area:header;
+  }
+  #blog article .post-content{
+    grid-area:post-content;
+  }
+  #blog article .post-meta{
+    grid-area:footer;
+  }
+  aside .container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:40px;
+  }
+  #colophon{
+    text-align:center;
+    background-image:
+    url("https://assets.codepen.io/7248/bg_1.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    color:#fff;
+    padding:20px;
+    
+  }
