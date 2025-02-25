@@ -1,0 +1,103 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  } 
+  img {
+    max-width:100%;
+  }
+  
+  .container{
+    padding:40px;
+    margin:auto;
+  }
+  
+  body{
+    background-color:#a05d15dd;
+    font-family: "Birthstone" serif;
+  }
+  main{
+    background-color:#deb48d;
+    width:80vw;
+    /* long form */
+    margin-top:40px;
+    margin-right:auto;
+    margin-bottom:40px;
+    margin-left:auto;
+    margin: 40px auto 40px auto;
+    margin: 40px auto;
+    border:20px solid #146915;
+    border-radius:40px;
+  }
+  header.primary {
+    background-color:#a16438;
+    padding:20px;
+    background-image:url("https://res.cloudinary.com/miles-extranet-dev/image/upload/w_800,h_480,c_fill,q_60/ArkansasSP/account_photos/13/2d3e741c5dcfc8ed9a3f958d248abd12_DevilsDen_MT_MTB_Waterfall_Female_Spring_2021_3108");
+    background-repeat:no-repeat;
+    background-size:cover;
+    display:flex;
+    border-bottom: 3px solid #ABFBF;
+    
+  }
+  header.primary h1, header.primary h2{
+    margin:0;
+  }
+  
+  header.primary h1 a{
+    color:#ffffff;
+    text-decoration:none;
+    font-size: 2.5rem;
+    text-shadow:2px 2px #171616;
+  }
+  header.primary h2{
+    color:#ffffff8a;
+    text-shadow:2px 2px #efe8e8;
+
+  }
+  
+  header.primary h3 a{
+    color:#d12323;
+    text-decoration:none;
+    font-size: 2.5rem;
+    text-shadow:2px 2px #171616;
+
+} 
+  header.primary nav ul li a{
+    border: 1px solid #0e5b11;
+    border-right:10px solid #208215;
+    border-radius:20px 0;
+    color:rgb(254, 254, 254);
+    display:block;
+    background-color:rgba(238, 236, 236, 0.6);
+    padding:10px 10px 10px 0;
+    text-align:right;
+    transition: .5s;
+    font-sixe: .9rem;
+    text-decoration:none;
+  }
+  
+  header.primary nav a:hover{
+      background-color:rgba(138, 132, 132, 0.9);
+      text-decoration:underline;
+  }
+  
+
+  #blog article .post-meta{
+    grid-area:footer;
+  }
+  aside .container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:40px;
+  }
+  #colophon{
+    text-align: center;
+    background-image:
+    url("https://res.cloudinary.com/miles-extranet-dev/image/upload/w_800,h_480,c_fill,q_60/ArkansasSP/account_photos/13/2d3e741c5dcfc8ed9a3f958d248abd12_DevilsDen_MT_MTB_Waterfall_Female_Spring_2021_3108");
+    background-repeat:no-repeat;
+    background-size:cover;
+    color:#fff;
+    padding:20px;
+   
+  }
