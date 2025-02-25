@@ -14,13 +14,12 @@ html {
   }
   
   body{
-    background-color:#a05d15dd;
+    background-color:#62a0328a;
     font-family: "Birthstone" serif;
   }
   main{
-    background-color:#deb48d;
+    background-color:#4669467e;
     width:80vw;
-    /* long form */
     margin-top:40px;
     margin-right:auto;
     margin-bottom:40px;
@@ -31,9 +30,9 @@ html {
     border-radius:40px;
   }
   header.primary {
-    background-color:#a16438;
+    background-color:#bdb5ae70;
     padding:20px;
-    background-image:url("https://res.cloudinary.com/miles-extranet-dev/image/upload/w_800,h_480,c_fill,q_60/ArkansasSP/account_photos/13/2d3e741c5dcfc8ed9a3f958d248abd12_DevilsDen_MT_MTB_Waterfall_Female_Spring_2021_3108");
+    background-image:url("https://i0.wp.com/gregdisch.com/wp-content/uploads/2009/02/_mg_1278_edited-1.jpg?fit=600%2C400&ssl=1");
     background-repeat:no-repeat;
     background-size:cover;
     display:flex;
@@ -46,34 +45,45 @@ html {
   
   header.primary h1 a{
     color:#ffffff;
-    text-decoration:none;
-    font-size: 2.5rem;
+    text-decoration:#040101a8;
+    text-align:justify;
+    font-size: 3.5rem;
     text-shadow:2px 2px #171616;
   }
-  header.primary h2{
-    color:#ffffff8a;
-    text-shadow:2px 2px #efe8e8;
+  header.primary h3{
+    color:#e3dddd;
+    font-size: 2.3rem;
+    text-shadow:2px 2px #040101a8;
 
+  }
+  header.primary div.hgroup{
+    width:70%;
   }
   
-  header.primary h3 a{
-    color:#d12323;
-    text-decoration:none;
-    font-size: 2.5rem;
-    text-shadow:2px 2px #171616;
-
-} 
+  header.primary nav{
+    width:30%;
+  }
+  header.primary nav ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+  }
+  
+  header.primary nav ul li{
+    margin-bottom:10px;
+  }
+  
   header.primary nav ul li a{
     border: 1px solid #0e5b11;
     border-right:10px solid #208215;
     border-radius:20px 0;
     color:rgb(254, 254, 254);
     display:block;
-    background-color:rgba(238, 236, 236, 0.6);
+    background-color:rgba(238, 236, 236, 0.355);
     padding:10px 10px 10px 0;
     text-align:right;
     transition: .5s;
-    font-sixe: .9rem;
+    font-size: 1.2rem;
     text-decoration:none;
   }
   
@@ -81,8 +91,34 @@ html {
       background-color:rgba(138, 132, 132, 0.9);
       text-decoration:underline;
   }
-  
 
+  #content{
+    line-height:1.8rem;
+  }
+
+  #blog article.post{
+    background-color:#ebebeb;
+    margin:20px;
+    padding:20px;
+      display:grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows:auto;
+    grid-template-areas:
+      "figure header"
+      "figure post-content"
+      "figure footer"
+    ;  
+  }
+  #blog article figure{
+    grid-area:figure;
+    margin:0 20px 0 0;
+  }
+  #blog article header{
+    grid-area:header;
+  }
+  #blog article.post-content{
+    grid-area:post-content;
+  }
   #blog article .post-meta{
     grid-area:footer;
   }
@@ -92,9 +128,9 @@ html {
     gap:40px;
   }
   #colophon{
-    text-align: center;
+    text-align:center;
     background-image:
-    url("https://res.cloudinary.com/miles-extranet-dev/image/upload/w_800,h_480,c_fill,q_60/ArkansasSP/account_photos/13/2d3e741c5dcfc8ed9a3f958d248abd12_DevilsDen_MT_MTB_Waterfall_Female_Spring_2021_3108");
+    url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/8b/92/08/photo6jpg.jpg?w=1200&h=-1&s=1");
     background-repeat:no-repeat;
     background-size:cover;
     color:#fff;
