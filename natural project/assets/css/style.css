@@ -1,0 +1,207 @@
+#page {
+    width: 960px;
+    font-family: helvetica, sans-serif;
+    font-weight: lighter;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #waterfall {
+    opacity: .75;
+    min-width: 960px;
+}
+
+#headerimage {
+    opacity: .75;
+    background-color: #000;
+    min-width: 960px;
+    
+  }
+
+  .dropbtnlines {
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 7px 0;
+  }
+
+  @media screen and (max-width:1024px){
+    .dropdown {
+        display:none;
+    }
+}
+.dropdown {
+    position: fixed;
+    top: 60px;
+    right: 25px;
+    z-index: 1;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 2;
+    right: 0;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#columnone, #columntwo, #columnthree {
+    float: left;
+    width: 280px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  p.descriptions {
+    height: 13em;
+    overflow: hidden;
+    text-align: justify;
+  }
+
+  h1 {
+    font-weight: lighter;
+    text-align: center;
+    letter-spacing: 1.5px;
+    padding-top: 10px;
+    font-size: 225%;
+    
+  }
+
+  h2 {
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-family: calibri;
+    font-weight: lighter;
+    color: #2C7CE6;
+  }
+  
+  p {
+    line-height: 1.4em;
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a: hover {
+    font-size: 150%;
+  }
+  
+  .columnimage {
+    opacity: .9;
+    border-radius: 50%;
+  }
+  
+  .columnimagewrapper {
+    background-color: white;
+  }
+  
+  img {
+    vertical-align:bottom;
+  }
+
+#missionstatement2 {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
+
+  #cabinview { 
+    position: relative;
+ 
+  }
+  table {
+    margin: 0 auto;
+  }
+  
+  #tablewrapper {
+    margin: 0 auto;
+  }
+  
+  table.row {
+    text-align: center;
+  }
+  
+  td {
+    padding: 5px;
+  }
+  
+  th {
+    padding-bottom: 10px;
+  }
+  
+  #copyright {
+    text-align: center;
+    padding: 10px;
+    font-family: helvetica, sans-serif;
+    font-weight: lighter;
+  }
+
+  #cabinimagetext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: white;
+    letter-spacing: 1.5px;
+    width: 750px;
+  }
+
+  #cabinimageuppercase {
+    font-size:135%;
+
+  }
+
+  #learnmorebutton {
+    background-color: #1E6E09;
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    margin: 0 auto;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.button #buttonspan {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button #buttonspan:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover #buttonspan {
+    padding-right: 25px;
+  }
+  
+  .button:hover #buttonspan:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+
+
