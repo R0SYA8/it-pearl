@@ -40,5 +40,29 @@ const navList = document.querySelector('.nav-list');
 hamburger.addEventListener('click', () => {
   navList.classList.toggle('active');
   document.body.classList.toggle('#menu-open');
+<script>
+  let index = 0;
+  const images = document.getElementById('carouselimages');
+  const total = images.children.length;
+
+  function showSlide(i) {
+    index = (i + total) % total;
+    images.style.transform = `translateX(-${index * 500}px)`;
+  }
+
+  function nextSlide() {
+    showSlide(index + 1);
+  }
+
+  function prevSlide() {
+    showSlide(index - 1);
+  }
+
+  setInterval(nextSlide, 3000); // auto-slide every 3 seconds
+</script>
+
+
+
+
 });
 });
