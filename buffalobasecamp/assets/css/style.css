@@ -205,9 +205,10 @@ html {
 
 /*-----------About Slider---------------*/
 .about-slider img{
-  width;80%;
+  width:80%;
   max-width: 800px;
 }
+
 .about-slider .slider {
   display:flex;
   justify-content: center;
@@ -225,6 +226,23 @@ html {
 .about-slider {
   overflow: visible;
 }
+/*------------------Float Slider-----------*/
+.float-slider img{
+  width: 80%;
+  max-width: 600px;
+}
+.float-slider .slider {
+  display:flex;
+  justify-content: center;
+  margin-bottom: 1 rem;
+}
+.float-slider .slider img{
+  margin: 0 auto;
+  display: block;
+}
+
+
+
 
 /*  ---------------Water Level-----------------  */
 .buttons{
@@ -321,6 +339,12 @@ canvas#waterLevelChart {
 .data-item p {
   font-size: 1rem;
   color: #ffffff;
+}
+
+/*-------------List--------*/
+ul {
+   text-align: center;
+   list-style-position: inside;
 }
 
 /*  ---------------Footer-----------------  */
