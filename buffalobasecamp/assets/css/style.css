@@ -227,18 +227,28 @@ html {
   overflow: visible;
 }
 /*------------------Float Slider-----------*/
-.float-slider img{
-  width: 80%;
+.carousel {
+  position: relative;
   max-width: 600px;
+  margin: 40px auto;
+  overflow: hidden;
 }
-.float-slider .slider {
-  display:flex;
-  justify-content: center;
-  margin-bottom: 1 rem;
+
+.slide {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
-.float-slider .slider img{
-  margin: 0 auto;
+
+.slide img {
+  width: 100%;
   display: block;
+}
+
+.slide.active {
+  opacity: 1;
+  position: relative;
 }
 
 

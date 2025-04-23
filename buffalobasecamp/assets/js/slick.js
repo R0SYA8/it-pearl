@@ -241,4 +241,26 @@ document.addEventListener('DOMContentLoaded', () => {
 		  .catch(error => console.error("Error fetching data:", error));
   });
   
-  
+  let currentIndex = 0;
+const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.remove('active');
+    if (i === index) {
+      slide.classList.add('active');
+    }
+  });
+}
+
+function nextSlide() {
+  currentIndex = (currentIndex + 1) % totalSlides;
+  showSlide(currentIndex);
+}
+
+// Automatically change slides every 4 seconds
+setInterval(nextSlide, 4000);
+
+// Optional: show the first slide on load
+showSlide(currentIndex);
