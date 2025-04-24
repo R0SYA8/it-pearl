@@ -24,7 +24,19 @@ html {
   }
   
   /*  ---------------Header Styles-----------------  */ 
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
   
+  .logo-container .title {
+    font-size: 40px;
+    margin: 0;
+  }
+
+
   header.primary {
     display: flex;
     align-items:flex-start;
@@ -35,10 +47,10 @@ html {
   }
 
   header.primary img {
-    height: 90px;
+    height: 100px;
     margin: 0;
     padding: 0;
-    margin-left: 15px; 
+    margin-left: 5px; 
   }
 
   header.primary ul li a {
@@ -59,6 +71,17 @@ html {
     margin: 0;
     padding: 0;
   }
+  header.primary figure h1{
+    font-family:"Rubik Dirt";
+    font-size: 2.7rem;
+    color:#ffffff; 
+    text-align:right;
+    font-weight: 400;
+    font-style: normal;
+    opacity: 80%;
+
+  }
+
 
   header.primary figure a {
     text-decoration: none;
